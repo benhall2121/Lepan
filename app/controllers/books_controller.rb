@@ -24,6 +24,7 @@ class BooksController < ApplicationController
   # GET /books/new
   # GET /books/new.json
   def new
+    @user = User.find(params[:user_id])
     @book = Book.new
 
     respond_to do |format|
@@ -34,13 +35,15 @@ class BooksController < ApplicationController
 
   # GET /books/1/edit
   def edit
+    @user = User.find(params[:user_id])
     @book = Book.find(params[:id])
   end
 
   # POST /books
   # POST /books.json
   def create
-    @book = Book.new(params[:book])
+    @user = User.find(params[:user_id])
+    @book = @user.books.new(params[:book])
 
     respond_to do |format|
       if @book.save

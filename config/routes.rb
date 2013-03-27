@@ -2,7 +2,9 @@ Lepan::Application.routes.draw do
   resources :books
 
 
-  resources :users
+  resources :users do
+    resources :books
+  end
 
   root to: 'users#index'
 
