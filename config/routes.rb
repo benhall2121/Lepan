@@ -1,5 +1,5 @@
 Lepan::Application.routes.draw do
-  resources :books
+  resources :books, only: :index
 
 
   resources :users do
