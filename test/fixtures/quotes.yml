@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  description: MyText
+  who_said_it: MyString
+  order_number: 1
+  relevant_date: 2013-03-27
+
+two:
+  description: MyText
+  who_said_it: MyString
+  order_number: 1
+  relevant_date: 2013-03-27

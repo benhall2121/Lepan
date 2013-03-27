@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @quote.description %>
+</p>
+
+<p>
+  <b>Who said it:</b>
+  <%= @quote.who_said_it %>
+</p>
+
+<p>
+  <b>Order number:</b>
+  <%= @quote.order_number %>
+</p>
+
+<p>
+  <b>Relevant date:</b>
+  <%= @quote.relevant_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_quote_path(@quote) %> |
+<%= link_to 'Back', quotes_path %>
