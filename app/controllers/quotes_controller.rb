@@ -13,6 +13,7 @@ class QuotesController < ApplicationController
   # GET /quotes/1
   # GET /quotes/1.json
   def show
+    @book = Book.find(params[:book_id])
     @quote = Quote.find(params[:id])
 
     respond_to do |format|
@@ -24,6 +25,7 @@ class QuotesController < ApplicationController
   # GET /quotes/new
   # GET /quotes/new.json
   def new
+    @book = Book.find(params[:book_id])
     @quote = Quote.new
 
     respond_to do |format|
@@ -34,17 +36,19 @@ class QuotesController < ApplicationController
 
   # GET /quotes/1/edit
   def edit
+    @book = Book.find(params[:book_id])
     @quote = Quote.find(params[:id])
   end
 
   # POST /quotes
   # POST /quotes.json
   def create
-    @quote = Quote.new(params[:quote])
+    @book = Book.find(params[:book_id])
+    @quote = @book.quotes.new(params[:quote])
 
     respond_to do |format|
       if @quote.save
-        format.html { redirect_to @quote, notice: 'Quote was successfully created.' }
+        format.html { redirect_to book_quote_path(@book, @quote), notice: 'Quote was successfully created.' }
         format.json { render json: @quote, status: :created, location: @quote }
       else
         format.html { render action: "new" }
