@@ -1,7 +1,10 @@
 class QuotesController < ApplicationController
+  before_filter :require_login
+
   # GET /quotes
   # GET /quotes.json
   def index
+    
     @quotes = Quote.all
 
     respond_to do |format|
@@ -13,7 +16,6 @@ class QuotesController < ApplicationController
   # GET /quotes/1
   # GET /quotes/1.json
   def show
-    @book = Book.find(params[:book_id])
     @quote = Quote.find(params[:id])
 
     respond_to do |format|
@@ -25,7 +27,6 @@ class QuotesController < ApplicationController
   # GET /quotes/new
   # GET /quotes/new.json
   def new
-    @book = Book.find(params[:book_id])
     @quote = Quote.new
 
     respond_to do |format|
@@ -36,14 +37,12 @@ class QuotesController < ApplicationController
 
   # GET /quotes/1/edit
   def edit
-    @book = Book.find(params[:book_id])
     @quote = Quote.find(params[:id])
   end
 
   # POST /quotes
   # POST /quotes.json
   def create
-    @book = Book.find(params[:book_id])
     @quote = @book.quotes.new(params[:quote])
 
     respond_to do |format|
