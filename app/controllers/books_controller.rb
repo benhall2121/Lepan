@@ -1,8 +1,10 @@
 class BooksController < ApplicationController
+  before_filter :require_login
+
   # GET /books
   # GET /books.json
   def index
-    @books = Book.all
+    @books = @current_user.books.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,8 +15,7 @@ class BooksController < ApplicationController
   # GET /books/1
   # GET /books/1.json
   def show
-    @user = User.find(params[:user_id])
-    @book = Book.find(params[:id])
+    @book = @current_user.books.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -25,8 +26,7 @@ class BooksController < ApplicationController
   # GET /books/new
   # GET /books/new.json
   def new
-    @user = User.find(params[:user_id])
-    @book = Book.new
+    @book = @current_user.books.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -36,18 +36,17 @@ class BooksController < ApplicationController
 
   # GET /books/1/edit
   def edit
-    @user = User.find(params[:user_id])
-    @book = Book.find(params[:id])
+    @book = @current_user.books.find(params[:id])
   end
 
   # POST /books
   # POST /books.json
   def create
-    @book = current_user.book.new(params[:book])
+    @book = @current_user.books.new(params[:book])
 
     respond_to do |format|
       if @book.save
-        format.html { redirect_to user_book_path(@user, @book), notice: 'Book was successfully created.' }
+        format.html { redirect_to user_book_path(@current_user, @book), notice: 'Book was successfully created.' }
         format.json { render json: @book, status: :created, location: @book }
       else
         format.html { render action: "new" }
@@ -59,7 +58,7 @@ class BooksController < ApplicationController
   # PUT /books/1
   # PUT /books/1.json
   def update
-    @book = Book.find(params[:id])
+    @book = @current_user.books.find(params[:id])
 
     respond_to do |format|
       if @book.update_attributes(params[:book])
@@ -75,7 +74,7 @@ class BooksController < ApplicationController
   # DELETE /books/1
   # DELETE /books/1.json
   def destroy
-    @book = Book.find(params[:id])
+    @book = @current_user.books.find(params[:id])
     @book.destroy
 
     respond_to do |format|
