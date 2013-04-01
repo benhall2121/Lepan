@@ -15,14 +15,14 @@
 	</tr>
 	<% @user.books.each do |book| %>
 		<tr>
-			<td><%= link_to book.title, edit_user_book_path(@user, book) %></td>
+			<td><%= link_to book.title, edit_book_path(book) %></td>
 			<td><%= book.author %></td>
 		</tr>
 	<% end %>
 </table>
 
 <p>
-	<%= link_to "New Book", new_user_book_path(@user) %>
+	<%= link_to "New Book", new_book_path %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
