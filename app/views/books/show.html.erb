@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <%= link_to 'Add a quote', new_quote_path(:book_id => @book) %>
+</p>
+
+<p>
   <b>Title:</b>
   <%= @book.title %>
 </p>
@@ -8,6 +12,11 @@
 <p>
   <b>Author:</b>
   <%= @book.author %>
+</p>
+
+<p>
+  <b>Book Code:</b>
+  <%= @book.book_code %>
 </p>
 
 <p>
@@ -23,3 +32,12 @@
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', user_path(@current_user) %>
+
+<div class="bordered_wrapper">
+    <% @book.quotes.each do |quo| %>
+      <div class="quote_wrapper">
+        <%= quo.description %><br/>
+        <%= quo.who_said_it %>
+      </div>
+    <% end %>
+  </div>
