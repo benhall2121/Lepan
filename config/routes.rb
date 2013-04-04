@@ -15,4 +15,6 @@ Lepan::Application.routes.draw do
   get "sign_up" => "users#new", :as => "sign_up"
 
   root to: 'users#home'
+  match '/about' => "users#about", :as => "about"
+  
 end
