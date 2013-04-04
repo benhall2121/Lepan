@@ -1,5 +1,8 @@
 Lepan::Application.routes.draw do
 
+  resources :contacts
+
+
   resources :quotes
 
   resources :books
