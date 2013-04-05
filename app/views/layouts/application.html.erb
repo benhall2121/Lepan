@@ -15,8 +15,8 @@
 
     <div class="navbar navbar-inner navbar-straightCorners main_margin">
         <div class="container">
-          <%= link_to "Lapan Books".html_safe, root_path, :class => "brand" %>
-          <div class="container nav-collapse collapse">
+          <%= link_to "Lapan Books", root_path, :class => "brand" %>
+          <div class="nav-collapse collapse">
             <ul class="nav">
               <li class= <%= 'active' if params[:controller] == 'users' && params[:action] == 'home' %>><%= link_to "Home", root_path %></li>
               <li class= <%= 'active' if params[:controller] == 'users' && params[:action] == 'about' %>><%= link_to "About", about_path %></li>
@@ -40,7 +40,6 @@
           </div><!--/.nav-collapse -->
         </div>
       </div>
-    </div>
 
     <div class="container">
         <div class="row">
