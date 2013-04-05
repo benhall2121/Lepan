@@ -13,9 +13,9 @@
   </head>
   <body>
 
-    <div class="navbar navbar-inner navbar-straightCorners main_margin">
+      <div class="navbar navbar-inner navbar-straightCorners main_margin">
         <div class="container">
-          <%= link_to "Lapan Books".html_safe, root_path, :class => "brand" %>
+          <%= link_to 'Lapan Books'.html_safe, root_path, :class => 'brand' %>
           <div class="container nav-collapse collapse">
             <ul class="nav">
               <li class= <%= 'active' if params[:controller] == 'users' && params[:action] == 'home' %>><%= link_to "Home", root_path %></li>
@@ -32,15 +32,14 @@
                 </ul>
               <% else %>
                 <%= form_tag sessions_path, :class => 'pull-right navbar-form' do %>
-                <%= text_field_tag :email, params[:email], :class => 'span2', :placeholder => "Email" %>
-                <%= password_field_tag :password, '', :class => 'span2', :placeholder => 'Password' %>
-                <%= submit_tag "Log in", :class => 'btn btn-green' %>
+                  <%= text_field_tag :email, params[:email], :class => 'span2', :placeholder => "Email" %>
+                  <%= password_field_tag :password, '', :class => 'span2', :placeholder => 'Password' %>
+                  <%= submit_tag "Log in", :class => 'btn btn-green' %>
                 <% end %>
               <% end %> 
           </div><!--/.nav-collapse -->
         </div>
       </div>
-    </div>
 
     <div class="container">
         <div class="row">
