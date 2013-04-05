@@ -13,7 +13,7 @@
   </head>
   <body>
 
-    <div class="navbar navbar-inner navbar-straightCorners main_margin">
+      <div class="navbar navbar-inner navbar-straightCorners main_margin">
         <div class="container">
           <%= link_to "Lapan Books", root_path, :class => "brand" %>
           <div class="nav-collapse collapse">
@@ -32,9 +32,9 @@
                 </ul>
               <% else %>
                 <%= form_tag sessions_path, :class => 'pull-right navbar-form' do %>
-                <%= text_field_tag :email, params[:email], :class => 'span2', :placeholder => "Email" %>
-                <%= password_field_tag :password, '', :class => 'span2', :placeholder => 'Password' %>
-                <%= submit_tag "Log in", :class => 'btn btn-green' %>
+                  <%= text_field_tag :email, params[:email], :class => 'span2', :placeholder => "Email" %>
+                  <%= password_field_tag :password, '', :class => 'span2', :placeholder => 'Password' %>
+                  <%= submit_tag "Log in", :class => 'btn btn-green' %>
                 <% end %>
               <% end %> 
           </div><!--/.nav-collapse -->
