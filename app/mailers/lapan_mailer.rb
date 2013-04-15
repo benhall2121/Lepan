@@ -9,6 +9,6 @@ class LapanMailer < ActionMailer::Base
   def contact_email(sent_email)
     @sent_email = sent_email
 
-    mail to: "brandoncgay@live.com", subject: "LapanBooks - A new Message from: #{sent_email.email}"
+    mail to: "ben@benerino.com", subject: "LapanBooks - A new Message from: #{sent_email.email}"
   end
 end
