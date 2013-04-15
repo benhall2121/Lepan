@@ -7,6 +7,7 @@
     <th>Book Code</th>
     <th>Description</th>
     <th>Is date specific</th>
+    <th>Cover</th>
     <th></th>
     <th></th>
     <th></th>
@@ -19,6 +20,7 @@
     <td><%= book.book_code %></td>
     <td><%= book.description %></td>
     <td><%= book.is_date_specific %></td>
+    <td><%= image_tag book.cover.url(:icon) %></td>
     <td><%= link_to 'Show', book %></td>
     <td><%= link_to 'Edit', edit_book_path(book) %></td>
     <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>

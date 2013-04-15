@@ -29,6 +29,10 @@
   <%= @book.is_date_specific %>
 </p>
 
+<p>
+  <b>Cover:</b><br>
+  <%= image_tag @book.cover.url(:large) %>
+</p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', user_path(@current_user) %>
