@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130415185733) do
+ActiveRecord::Schema.define(:version => 20130417212911) do
 
   create_table "books", :force => true do |t|
     t.string   "title"
@@ -40,9 +40,13 @@ ActiveRecord::Schema.define(:version => 20130415185733) do
     t.string   "who_said_it"
     t.integer  "order_number"
     t.date     "relevant_date"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
     t.integer  "book_id"
+    t.string   "quote_pic_file_name"
+    t.string   "quote_pic_content_type"
+    t.integer  "quote_pic_file_size"
+    t.datetime "quote_pic_updated_at"
   end
 
   create_table "users", :force => true do |t|
