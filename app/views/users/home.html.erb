@@ -1,2 +1,39 @@
-<h1>Home</h1>
-<%= link_to "Sign Up", new_user_path, :class => 'btn btn-green' %>
+<div class="hero-unit">
+	<div style="text-align:center;margin-bottom:10px;color:#777;">
+		<h1 style="font-weight:300;">Lapan Books</h1>
+		Lorem ipsum dolor sit amet, consectetur
+	</div>
+	<% if !current_user %>
+      <div style="text-align:center; margin-top:10px;">
+        <%= link_to "Sign Up Now", sign_up_path, :class => 'btn btn-large btn-inverse' %>
+      </div>
+    <% end %>
+</div>
+
+<div class="row">
+  <div class="span4">
+    <h4>Lorem ipsum dolor sit amet</h4>
+    <p>
+      mauris, ut cursus augue elementum vitae. Aenean dapibus facilisis justo, at porta diam viverra eu. Quisque tincidunt ornare quam, ut sollicitudin dui gravida tristique. Proin leo urna, ullamcorper sed lobortis vel, tristique sagittis mi. In orci lacus, fringilla non elementum vel
+    </p>
+  </div>
+        
+  <div class="span4">
+    <h4>Benefits</h4>
+    <p>
+      <ul style="font-size:13px;">
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>LVestibulum nec enim non lorem feugiat blandit sit amet in velit.</li>
+        <li>Pellentesque eu lorem in mi </li>
+        <li>nteger scelerisque vestibulum </li>
+      </ul>
+    </p>
+  </div>
+   
+  <div class="span4">
+    <h4>Nunc elit m</h4>
+    <p>
+      Donec nisl nibh, convallis sit amet molestie at, posuere volutpat leo. Praesent ligula turpis, feugiat ut luctus at, imperdiet eget nisi. Nam lorem ante, mollis a rutrum eu, semper eget nisi. Donec a porta urna. Proin in diam sit amet erat aliquam aliquet at id orci. Vivamus fermentum, mauris nec eleifend convallis, ligula erat posuere dui, eu aliquet tellus nunc eget metus. Quisque et nibh sit amet ipsum tincidunt gravida
+    </p>
+  </div>
+</div>

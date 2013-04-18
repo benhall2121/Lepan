@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lapan Books</title>
     <%= csrf_meta_tags %>
 
@@ -34,25 +31,20 @@
                 <%= form_tag sessions_path, :class => 'pull-right navbar-form' do %>
                   <%= text_field_tag :email, params[:email], :class => 'span2', :placeholder => "Email" %>
                   <%= password_field_tag :password, '', :class => 'span2', :placeholder => 'Password' %>
-                  <%= submit_tag "Log in", :class => 'btn btn-green' %>
+                  <%= submit_tag "Log in", :class => 'btn btn-inverse' %>
                 <% end %>
               <% end %> 
           </div><!--/.nav-collapse -->
         </div>
       </div>
 
-    <div class="container">
-        <div class="row">
-          <div class="span9">
-            <%= yield %>
-          </div>
-        </div><!--/row-->
+<div class="main_margin container">
+  <%= yield %>
+</div>
 
-      <footer>
-        <p>&copy; Lapan Books 2013</p>
-      </footer>
-
-    </div> <!-- /container -->
+<div class="main_margin container footer">
+    &#169; LapanBooks <%= Time.now.year %>
+</div>
 
     <!-- Javascripts
     ================================================== -->

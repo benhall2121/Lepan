@@ -12,14 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
+    <%= f.text_field :email, :class => 'input-block-level', :placeholder => 'Email Address' %>
   </div>
   <div class="field">
-    <%= f.label :desc %><br />
-    <%= f.text_area :desc %>
+    <%= f.text_area :desc, :class => 'input-block-level', :placeholder => 'How can we help you?' %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Send', :class => 'btn btn-inverse' %>
   </div>
 <% end %>
