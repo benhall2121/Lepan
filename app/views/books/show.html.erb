@@ -25,9 +25,11 @@
   <div class="bordered_wrapper">
     <% @book.quotes.each do |quo| %>
       <div class="quote_wrapper">
-        <%= quo.description %><br/>
+        <%= link_to quo.description, quo %><br/>
         <%= quo.who_said_it %>
       </div>
     <% end %>
   </div>
 </div>
+
+<%= link_to 'Back', books_path %>

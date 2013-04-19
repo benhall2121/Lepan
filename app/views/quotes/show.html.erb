@@ -1,25 +1,35 @@
-<p id="notice"><%= notice %></p>
+<div class="bordered_wrapper" style="overflow:auto;">
+  <div class="header_info_wrapper">
+  	<% if !@quote.quote_pic_file_name.nil? %>
+    	<div class="span2 header_image">
+      		<%= image_tag @quote.quote_pic.url(:large) %>
+    	</div>
+    <% end %>
 
-<p>
-  <b>Description:</b>
-  <%= @quote.description %>
-</p>
+    <div class="span8">
+    	<p>
+  			<b>Quote:</b>
+  			<%= @quote.description %>
+		</p>
+		<p>
+  			<b>Who said it:</b>
+  			<%= @quote.who_said_it %>
+		</p>
+		<p>
+  			<b>Order number:</b>
+  			<%= @quote.order_number %>
+		</p>
+		<p>
+  			<b>Relevant date:</b>
+  			<%= @quote.relevant_date %>
+		</p>
+    </div>
 
-<p>
-  <b>Who said it:</b>
-  <%= @quote.who_said_it %>
-</p>
+	</div>
 
-<p>
-  <b>Order number:</b>
-  <%= @quote.order_number %>
-</p>
+	<%= link_to 'Edit Quote', edit_quote_path(@quote), :class => 'btn btn-inverse' %> 
+	<%= link_to 'Delete Quote', @quote, method: :delete, data: { confirm: 'Are you sure?'}, :class => 'btn btn-inverse' %>
 
-<p>
-  <b>Relevant date:</b>
-  <%= @quote.relevant_date %>
-</p>
+</div>
 
-
-<%= link_to 'Edit', edit_quote_path(@quote) %> |
-<%= link_to 'Back', quotes_path %>
+<%= link_to 'Back', book_path(@quote.book_id) %>
