@@ -1,6 +1,7 @@
-<h1>Editing book</h1>
+<div class="bordered_wrapper">
+	<h3>Editing <%= @book.title %></h3>
 
-<%= render 'form' %>
+	<%= render 'form' %>
 
-<%= link_to 'Show', book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+	<%= link_to 'Back', book_path(@book) %>
+</div>

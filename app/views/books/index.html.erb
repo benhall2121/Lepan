@@ -11,11 +11,11 @@
         </tr>
 
         <% @books.each do |book| %>
-        <tr>
-            <td><%= link_to (image_tag book.cover.url(:icon)), book %></td>
-            <td><%= link_to book.title, book %></td>
-            <td><%= book.author %></td>
-        </tr>
+            <tr>
+                <td><%= link_to (image_tag book.cover.url(:icon)), book %></td>
+                <td><%= link_to book.title, book %></td>
+                <td><%= book.author %></td>
+            </tr>
         <% end %>
     </table>
 </div>

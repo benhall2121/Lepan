@@ -6,7 +6,7 @@
 
     <div class="span8">
       <h3>
-        <%= @book.title %> by <%= @book.author %> <%= link_to 'Edit Book', edit_book_path(@book), :class => 'btn btn-inverse pull-right' %>
+        <%= @book.title %> by <%= @book.author %> <%= link_to 'Add a Quote', new_quote_path(book_id: @book), :class => 'btn btn-inverse' %> <%= link_to 'Edit Book', edit_book_path(@book), :class => 'btn btn-inverse' %>
       </h3>
       <p>
         <b>Description:</b>

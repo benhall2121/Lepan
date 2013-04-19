@@ -12,30 +12,24 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
+    <%= f.text_field :title, :class => 'input-block-level', :placeholder => 'Title' %>
   </div>
   <div class="field">
-    <%= f.label :author %><br />
-    <%= f.text_field :author %>
+    <%= f.text_field :author, :class => 'input-block-level', :placeholder => 'Author' %>
   </div>
   <div class="field">
-    <%= f.label :book_code %><br />
-    <%= f.text_field :book_code, :class => 'book_code' %>
+    <%= f.text_field :book_code, :class => 'book_code input-block-level', :placeholder => 'Book Code' %>
   </div>
   <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
+    <%= f.text_area :description, :class => 'input-block-level', :placeholder => 'Book Description' %>
   </div>
   <div class="field">
-    <%= f.label :is_date_specific %><br />
-    <%= f.check_box :is_date_specific %>
+    Book is date specific <%= f.check_box :is_date_specific %>
   </div>
   <div class="field">
-    <%= f.label :cover %>
-    <%= f.file_field :cover %>
+    Book Cover <%= f.file_field :cover %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Save', :class => 'btn btn-inverse' %>
   </div>
 <% end %>
