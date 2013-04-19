@@ -1,43 +1,28 @@
-<p id="notice"><%= notice %></p>
+<div class="bordered_wrapper" style="overflow:auto;">
+  <div class="header_info_wrapper">
+    <div class="span2 header_image">
+      <%= image_tag @book.cover.url(:large) %>
+    </div>
 
-<p>
-  <%= link_to 'Add a quote', new_quote_path(:book_id => @book) %>
-</p>
+    <div class="span8">
+      <h3>
+        <%= @book.title %> by <%= @book.author %> <%= link_to 'Edit Book', edit_book_path(@book), :class => 'btn btn-inverse pull-right' %>
+      </h3>
+      <p>
+        <b>Description:</b>
+        <%= @book.description %>
+      </p>
 
-<p>
-  <b>Title:</b>
-  <%= @book.title %>
-</p>
+    </div>
+  </div>
 
-<p>
-  <b>Author:</b>
-  <%= @book.author %>
-</p>
+  <div>
+    <h5>
+      Quotes:
+    </h5>
+  </div>
 
-<p>
-  <b>Book Code:</b>
-  <%= @book.book_code %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @book.description %>
-</p>
-
-<p>
-  <b>Is date specific:</b>
-  <%= @book.is_date_specific %>
-</p>
-
-<p>
-  <b>Cover:</b><br>
-  <%= image_tag @book.cover.url(:large) %>
-</p>
-
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', user_path(@current_user) %>
-
-<div class="bordered_wrapper">
+  <div class="bordered_wrapper">
     <% @book.quotes.each do |quo| %>
       <div class="quote_wrapper">
         <%= quo.description %><br/>
@@ -45,3 +30,4 @@
       </div>
     <% end %>
   </div>
+</div>

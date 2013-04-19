@@ -1,33 +1,21 @@
-<h1>Listing books</h1>
+<div class="bordered_wrapper">
+    <h3>
+        Your Books <%= link_to 'New Book', new_book_path, :class => 'btn btn-inverse' %>
+    </h3>
 
-<table class="table">
-  <tr>
-    <th>Title</th>
-    <th>Author</th>
-    <th>Book Code</th>
-    <th>Description</th>
-    <th>Is date specific</th>
-    <th>Cover</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+    <table class="table table-striped">
+        <tr>
+            <th></th>
+            <th>Title</th>
+            <th>Author</th>
+        </tr>
 
-<% @books.each do |book| %>
-  <tr>
-    <td><%= link_to book.title, book %></td>
-    <td><%= book.author %></td>
-    <td><%= book.book_code %></td>
-    <td><%= book.description %></td>
-    <td><%= book.is_date_specific %></td>
-    <td><%= image_tag book.cover.url(:icon) %></td>
-    <td><%= link_to 'Show', book %></td>
-    <td><%= link_to 'Edit', edit_book_path(book) %></td>
-    <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Book', new_book_path %>
+        <% @books.each do |book| %>
+        <tr>
+            <td><%= link_to (image_tag book.cover.url(:icon)), book %></td>
+            <td><%= link_to book.title, book %></td>
+            <td><%= book.author %></td>
+        </tr>
+        <% end %>
+    </table>
+</div>
