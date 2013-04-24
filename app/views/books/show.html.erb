@@ -24,7 +24,7 @@
 
   <div class="bordered_wrapper">
     <ul id="quotes" data-update-url="<%= sort_quotes_path %>">
-      <%= content_tag_for(:li, @book.quotes, :class => "quote_wrapper") do |quote| %>
+      <%= content_tag_for(:li, @book.quotes.order('position'), :class => "quote_wrapper") do |quote| %>
           <%= link_to quote.description, quote %><br/>
           <%= quote.who_said_it %>
       <% end %>
