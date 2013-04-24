@@ -3,6 +3,10 @@
 	{
 		"selected_items":
 		[
+			[
+				"btn",
+				"btn-inverse"
+			]
 		]
 	},
 	"buffers":
@@ -11,7 +15,23 @@
 			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 3258,
+				"buffer_size": 2292,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/books/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 957,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/quotes_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2186,
 				"line_ending": "Unix"
 			}
 		},
@@ -19,71 +39,15 @@
 			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 2148,
+				"buffer_size": 485,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/books/index.html.erb",
+			"file": "app/assets/javascripts/site.js",
 			"settings":
 			{
-				"buffer_size": 647,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/user.rb",
-			"settings":
-			{
-				"buffer_size": 762,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/users/_form.html.erb",
-			"settings":
-			{
-				"buffer_size": 934,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/application_controller.rb",
-			"settings":
-			{
-				"buffer_size": 223,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/sessions/new.html.erb",
-			"settings":
-			{
-				"buffer_size": 287,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/users/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 580,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/sessions_controller.rb",
-			"settings":
-			{
-				"buffer_size": 442,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/users/home.html.erb",
-			"settings":
-			{
-				"buffer_size": 15,
+				"buffer_size": 565,
 				"line_ending": "Unix"
 			}
 		}
@@ -91,15 +55,27 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
 		],
-		"width": 0.0
+		"width": 530.0
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 125.0
 	},
 	"distraction_free":
 	{
@@ -112,21 +88,52 @@
 	},
 	"file_history":
 	[
-		"/Users/brandoncgay/Projects/Lepan/app/views/books/show.html.erb",
-		"/Users/brandoncgay/Projects/Lepan/app/views/books/_form.html.erb",
-		"/Users/brandoncgay/Projects/Lepan/app/controllers/books_controller.rb",
-		"/Users/brandoncgay/Projects/Lepan/app/controllers/quotes_controller.rb",
-		"/Users/brandoncgay/Projects/Lepan/app/models/book.rb",
-		"/Users/brandoncgay/Projects/Lepan/app/models/user.rb",
-		"/Users/brandoncgay/Projects/Lepan/app/views/users/show.html.erb",
-		"/Users/brandoncgay/Projects/Lepan/app/views/users/index.html.erb",
 		"/Users/brandoncgay/Projects/Lepan/Gemfile",
-		"/Users/brandoncgay/Projects/Lepan/config/database.yml",
-		"/Users/brandoncgay/Projects/Lepan/config/routes.rb"
+		"/Users/brandoncgay/Projects/Lepan/app/assets/javascripts/application.js",
+		"/Users/brandoncgay/Projects/Lepan/app/assets/stylesheets/application.css",
+		"/Users/brandoncgay/Projects/Lepan/app/assets/javascripts/quotes.js.coffee",
+		"/Users/brandoncgay/Projects/Lepan/app/assets/javascripts/books.js.coffee",
+		"/Users/brandoncgay/Projects/Lepan/app/views/books/show.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/books/index.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/books/new.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/books/edit.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/books/_form.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/quotes/new.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/quotes/edit.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/quotes/_form.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/quotes/show.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/controllers/quotes_controller.rb",
+		"/Users/brandoncgay/Projects/Lepan/app/controllers/sessions_controller.rb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/users/home.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/contacts/_form.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/contacts/new.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/users/about.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/models/quote.rb",
+		"/Users/brandoncgay/Projects/Lepan/app/models/book.rb",
+		"/Users/brandoncgay/Projects/Lepan/.gitignore",
+		"/Users/brandoncgay/Projects/Lepan/db/schema.rb",
+		"/Users/brandoncgay/Projects/Lepan/config/initializers/setup_mail.rb",
+		"/Users/brandoncgay/Projects/Lepan/app/controllers/contacts_controller.rb",
+		"/Users/brandoncgay/Projects/Lepan/app/mailers/lapan_mailer.rb",
+		"/Users/brandoncgay/Projects/Lepan/config/routes.rb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/lapan_mailer/contact_email.text.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/layouts/application.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/quotes/index.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/controllers/books_controller.rb",
+		"/Users/brandoncgay/Projects/Lepan/app/assets/stylesheets/bootstrap.min.css",
+		"/Users/brandoncgay/Projects/Lepan/app/assets/javascripts/bootstrap.min.js",
+		"/Users/brandoncgay/Projects/Lepan/app/assets/javascripts/rails.js",
+		"/Users/brandoncgay/Projects/Lepan/app/views/users/show.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/users/_form.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/sessions/new.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/views/users/index.html.erb",
+		"/Users/brandoncgay/Projects/Lepan/app/controllers/application_controller.rb",
+		"/Users/brandoncgay/Projects/Lepan/app/models/user.rb",
+		"/Users/brandoncgay/Projects/Lepan/config/database.yml"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -140,6 +147,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"brand:hover",
+			"brand"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -157,7 +166,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -165,15 +174,15 @@
 					"file": "app/views/layouts/application.html.erb",
 					"settings":
 					{
-						"buffer_size": 3258,
+						"buffer_size": 2292,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2409,
-								2409
+								161,
+								161
 							]
 						],
 						"settings":
@@ -183,25 +192,81 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 584.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "config/routes.rb",
+					"file": "app/views/books/show.html.erb",
 					"settings":
 					{
-						"buffer_size": 2148,
+						"buffer_size": 957,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								126,
-								126
+								697,
+								697
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/controllers/quotes_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2186,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2175,
+								2175
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 629.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								112,
+								112
 							]
 						],
 						"settings":
@@ -217,212 +282,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/views/books/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 647,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								43,
-								43
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/models/user.rb",
-					"settings":
-					{
-						"buffer_size": 762,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								347,
-								347
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 4,
-					"file": "app/views/users/_form.html.erb",
+					"file": "app/assets/javascripts/site.js",
 					"settings":
 					{
-						"buffer_size": 934,
+						"buffer_size": 565,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								430,
-								430
+								544,
+								544
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/controllers/application_controller.rb",
-					"settings":
-					{
-						"buffer_size": 223,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								218,
-								218
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/views/sessions/new.html.erb",
-					"settings":
-					{
-						"buffer_size": 287,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								51,
-								51
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/views/users/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 580,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								72,
-								72
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/controllers/sessions_controller.rb",
-					"settings":
-					{
-						"buffer_size": 442,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								437,
-								437
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/views/users/home.html.erb",
-					"settings":
-					{
-						"buffer_size": 15,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								14,
-								14
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -439,7 +316,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -474,6 +351,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"quotes.",
+				"/Users/brandoncgay/Projects/Lepan/app/assets/javascripts/quotes.js.coffee"
+			]
 		],
 		"width": 0.0
 	},
@@ -489,6 +370,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 299.0,
+	"side_bar_width": 335.0,
 	"status_bar_visible": true
 }

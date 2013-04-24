@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130417212911) do
+ActiveRecord::Schema.define(:version => 20130422191946) do
 
   create_table "books", :force => true do |t|
     t.string   "title"
@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(:version => 20130417212911) do
     t.string   "quote_pic_content_type"
     t.integer  "quote_pic_file_size"
     t.datetime "quote_pic_updated_at"
+    t.integer  "position"
   end
 
   create_table "users", :force => true do |t|

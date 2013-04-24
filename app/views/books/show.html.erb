@@ -23,13 +23,14 @@
   </div>
 
   <div class="bordered_wrapper">
-    <% @book.quotes.each do |quo| %>
-      <div class="quote_wrapper">
-        <%= link_to quo.description, quo %><br/>
-        <%= quo.who_said_it %>
-      </div>
-    <% end %>
+    <ul id="quotes" data-update-url="<%= sort_quotes_path %>">
+      <%= content_tag_for(:li, @book.quotes, :class => "quote_wrapper") do |quote| %>
+          <%= link_to quote.description, quote %><br/>
+          <%= quote.who_said_it %>
+      <% end %>
+    </ul>
   </div>
+
 </div>
 
 <%= link_to 'Back', books_path %>

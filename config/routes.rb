@@ -2,8 +2,9 @@ Lepan::Application.routes.draw do
 
   resources :contacts
 
-
-  resources :quotes
+  resources :quotes do
+    post :sort, on: :collection
+  end
 
   resources :books
 

@@ -5,7 +5,7 @@ class QuotesController < ApplicationController
   # GET /quotes.json
   def index
     
-    @quotes = Quote.all
+    @quotes = Quote.order("position")
 
     respond_to do |format|
       format.html # index.html.erb
@@ -83,5 +83,12 @@ class QuotesController < ApplicationController
       format.html { redirect_to book_path(@quote.book_id) }
       format.json { head :no_content }
     end
+  end
+
+  def sort
+    params[:quote].each_with_index do |id, index|
+      Quote.update_all({position: index+1}, {id: id})
+    end
+    render nothing: true
   end
 end

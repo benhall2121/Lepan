@@ -14,5 +14,11 @@ $(document).ready(function() {
   	$(this).val(valNoSpaces);
   });
 
+  $('#quotes').sortable({
+  	update: function(event, ui) {
+  		$.post($(this).data('update-url'), $(this).sortable('serialize'))
+  	}
+  });
+
 });
 
