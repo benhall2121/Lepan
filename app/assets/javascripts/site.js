@@ -16,7 +16,7 @@ $(document).ready(function() {
 
   $('#quotes').sortable({
   	update: function(event, ui) {
-  		$.post($(this).data('update-url'), $(this).sortable('serialize'))
+  		$.post($(this).data('update-url'), $(this).sortable('serialize'));
   	}
   });
 

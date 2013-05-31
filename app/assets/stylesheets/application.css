@@ -101,6 +101,11 @@ textarea{
   *background-color:#0EB0C9;
 }
 
+.btn-small{
+  font-size:12px;
+  padding: 0px 7px;
+}
+
 .bordered_wrapper{
   overflow:auto;
 
@@ -138,9 +143,31 @@ textarea{
 
 /**********  Quotes  **********/
 
+ul#quotes, ul#quotes li, .no_ul_style, .no_ul_style li{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
 .quote_wrapper{
   padding: 10px;
-  border-bottom: 1px solid #888;
+  border-bottom: 1px solid #DDD;
+}
+
+.quote_desc{
+  font-size: 16px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.quote_person{
+  font-size: 14px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.quote_controls{
+  padding-bottom: 15px;
 }
 
 /**********  END Quotes  **********/
